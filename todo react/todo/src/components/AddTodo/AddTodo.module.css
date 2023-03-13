@@ -1,0 +1,12 @@
+.icons{
+    background: transparent;
+    color: white;
+    border: transparent;
+}
+
+.add{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
