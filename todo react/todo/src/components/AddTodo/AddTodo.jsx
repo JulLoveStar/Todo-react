@@ -1,17 +1,21 @@
-import React, {useState} from "react";
+import React, {useState, useEffect}from "react";
 import classes from "../AddTodo/AddTodo.module.css"
 import {BsSave} from "react-icons/bs";
 
-export default function AddTodo({ todo, setTodo }){
+export default function AddTodo({ newtodo }){
 
     const[value,setValue] = useState('')
+
     
-    function saveTodo(){
-        setTodo([...todo, {
+    const saveTodo=()=>{
+        newtodo({
             id: Date(),
             title: value,
             status: true
-        }])
+        }
+        )
+        
+        
         setValue('')
     }
     return(
