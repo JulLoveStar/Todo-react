@@ -2,7 +2,13 @@
     background: transparent;
     color: white;
     border: transparent;
+    padding-right: 10px;
 }
+
+.icon:hover{
+    color: rgb(241, 153, 241);
+    transition: 1s;
+  }
 
 .add{
     display: flex;

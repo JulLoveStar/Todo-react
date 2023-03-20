@@ -15,14 +15,14 @@
 }
 
 .todo.completed {
-  text-decoration: line-through;
+  text-decoration: line-through 2px;
   text-decoration-color: rgb(241, 153, 241);
 }
 
 .marcer{
     display: flex;
-    width: 12px;
-    height: 12px;
+    width: 15px;
+    height: 15px;
     border: 1px solid rgb(241, 153, 241);
     border-radius: 0.25rem;
 }
@@ -30,10 +30,6 @@
 .marcer.completed{
     background-color: rgb(241, 153, 241);
 }
-
-/* .check{
-    size: 2rem;
-} */
 
 .find_wrapper{
   display: flex;
@@ -45,7 +41,12 @@
     background: transparent;
     color: white;
     border: transparent;
-    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.icon:hover{
+  color: rgb(241, 153, 241);
+  transition: 1s;
 }
 
 .todo_wrapper{
@@ -55,6 +56,12 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+}
+
+.todo_wrapper:hover{
+  background-color: rgb(97, 92, 92);
+  color: rgb(241, 153, 241);
+  transition: 1s;
 }
 
 .todo_list{
@@ -76,9 +83,17 @@
   line-height: 1.5;
   width: 90px;
   color: white;
-  background-color: rgb(241, 153, 241);
-  border: 1px solid #bdbdbd;
+  background-color:  rgb(65, 63, 63);
+  border: 1px solid rgb(241, 153, 241);
   border-radius: 0.25rem;
+}
+
+.status_btn.active{
+  background-color: rgb(241, 153, 241);
+}
+
+.status_btn:hover{
+  background-color: rgb(241, 153, 241);
 }
 
 input {
@@ -92,8 +107,6 @@ input {
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  /* color: #212529;
-  background-color: #fff; */
   background-clip: padding-box;
   border: 1px solid rgb(241, 153, 241);
   border-radius: 0.25rem;
